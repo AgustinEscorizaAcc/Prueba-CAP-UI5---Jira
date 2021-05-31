@@ -6,5 +6,12 @@ service Api {
         select from my.Products {
             *
         };
-
+    entity Employees as 
+        select from my.Employees {
+            *
+        };
+    entity Orders as 
+        select from my.Orders{
+            *
+        };
 }
