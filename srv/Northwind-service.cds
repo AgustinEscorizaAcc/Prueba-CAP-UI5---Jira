@@ -7,4 +7,13 @@ service Api {
             *
         };
 
+    entity Customers as
+        select from my.Customers {
+            *
+        };
+
+    entity Invoices as
+        select from my.Customers {
+            *
+        };
 }
