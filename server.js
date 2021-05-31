@@ -22,8 +22,8 @@ cds.once('served', async () => {
                             unitPrice: product.UnitPrice,
                             unitsInStock: product.UnitsInStock,
                             unitsOnOrder: product.UnitsOnOrder,
-                            categoryId: product.CategoryID,
-                            supplierId: product.SupplierID,
+                            category_categoryID: product.CategoryID,
+                            supplier_supplierID: product.SupplierID,
                             reOrderLevel: product.ReorderLevel,
                             discontinued: product.Discontinued
                         });
@@ -57,7 +57,6 @@ cds.once('served', async () => {
                     let categories = [];
                     for (let categorie of allCategories) {
                         categories.push({
-                            // cargar los campos
                             categoryID: categorie.categoryID,
                             categoryName: categorie.CategoryName,
                             description: categorie.Description,

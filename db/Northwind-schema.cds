@@ -9,8 +9,8 @@ entity Products {
         unitPrice       : Decimal(7, 4);
         unitsInStock    : Integer;
         unitsOnOrder    : Integer;
-        categoryId      : Association to Categories;
-        supplierId      : Association to Suppliers;
+        category        : Association to Categories;
+        supplier        : Association to Suppliers;
         reOrderLevel    : Integer;
         discontinued    : Boolean;
 }
